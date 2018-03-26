@@ -1,0 +1,645 @@
+html,body {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+}
+.swiper-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+.swiper-pagination-bullet-active {
+	background-color: transparent;
+	border:1px solid #ccc;	
+	box-sizing:  border-box;
+	-webkit-box-sizing:  border-box;
+	-moz-box-sizing:  border-box;
+}
+/*第一页*/
+.side1 {
+	background: #CC66FF;
+}
+.pic-header {
+	position: absolute;
+	width: 50%;
+    left: 25%;
+    top: 22%;
+}
+.pic-header img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.cmp1 {
+	width: 100%;
+	animation: rotate-all 4s linear 1s infinite;
+	-moz-animation: rotate-all 4s linear 1s infinite;
+    -webkit-animation: rotate-all 4s linear 1s infinite;
+    -o-animation: rotate-all 4s linear 1s infinite;
+}
+.cmp2 {
+	width: 90%;
+}
+.cmp3 {
+	width: 85%;
+	border-radius: 50%;
+}
+.side1-name {
+	position: relative;
+	top: 50%;
+}
+.name-eng {
+	display: block;
+	color: rgb(255, 255, 255);
+    font-family: 微软雅黑;
+    font-size: 0.8rem;
+}
+.name-cha {
+	display: block;
+	height: 5%;
+	width: 45%;
+	margin: 2% auto;
+}
+.name-border {
+	width: 45%;
+	margin: 2% auto;
+}
+.side1:after, .side2:after, .side3:after, .side4:after, .side5:after  {
+	content: " ";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0.7rem;
+    background: url(../image/page-logo.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+    -moz-animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+    -ms-animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+    animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+    z-index: 100;
+}
+/*第二页*/
+.side2 {
+	background: rgb(245, 156, 0);
+}
+.border-left {
+	position: absolute;
+	width: 28%;
+    height: 2%;
+    left: 0.1%;
+    top: 15%;
+    z-index: 0;
+}
+.border-right {
+	position: absolute;
+	width: 28%;
+    height: 2%;
+    right: 0.1%;
+    top: 15%;
+    z-index: 0;
+}
+.side2-title {
+	position: absolute;
+	width: 30%;
+    left: 35%;
+    top: 6.4%;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+.side2-title1 {
+	position: absolute;
+	width: 30%;
+    left: 35%;
+    top: 6.4%;
+    z-index: 0;
+    animation: rotate-all 2s 0.5s infinite;
+	-moz-animation: rotate-all 2s 0.5s infinite;
+    -webkit-animation: rotate-all 2s 0.5s infinite;
+    -o-animation: rotate-all 2s 0.5s infinite;
+}
+.side2-title2 {
+	position: absolute;
+	width: 22%;
+    height: 6%;
+    left: 39%;
+    top: 13%;
+    z-index: 0;
+}
+.side2-border-bottom, .side2-title-right, .side2-title-left, .side2-number-left, .side2-number-right, .side2-border-left, .side2-border-right, .side2-content-right, .side2-content-left  {
+	position: absolute;
+	width: 58%;
+	height: 50%;
+    left: 21%;
+    top: 32%;
+    z-index: 0;
+}
+.side2-border-bottom img {
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+.s2-b1 {
+	top: 18%;
+}
+.s2-b2 {
+	top: 38%;
+}
+.s2-b3 {
+	top: 58%;
+}
+.s2-b4 {
+	top: 78%;
+}
+.s2-b5 {
+	top: 98%;
+}
+.side2-title-right img, .side2-title-left img {
+	width: 10%;
+    height: 8%;
+    position: absolute;
+}
+.s2-san1 {
+	top: 5%;
+	left: 30%;
+}
+.s2-san2 {
+	top: 25%;
+	right: 32%;
+}
+.s2-san3 {
+	top: 45%;
+	left: 30%;
+}
+.s2-san4 {
+	top: 65%;
+	right: 32%;
+}
+.s2-san5 {
+	top: 85%;
+	left: 30%;
+}
+.side2-number-left img, .side2-number-right img {
+	width: 17%;
+	height: 10%;
+	position: absolute;
+}
+.s2-01 {
+	top: 4%;
+	left: 7%;
+}
+.s2-02 {
+	top: 24%;
+	right: 9%;
+}
+.s2-03 {
+	top: 44%;
+	left: 7%;
+}
+.s2-04 {
+	top: 64%;
+	right: 9%;
+}
+.s2-05 {
+	top: 84%;
+	left: 7%;
+}
+.side2-border-left img, .side2-border-right img {
+	width: 44%;
+	height: 13%;
+	position: absolute;
+}
+.s2-bb1 {
+	top: 2.5%;
+	right: 9%;
+}
+.s2-bb2 {
+	top: 22.5%;
+	left: 7%;
+}
+.s2-bb3 {
+	top: 42.5%;
+	right: 9%;
+}
+.s2-bb4 {
+	top: 62.5%;
+	left: 7%;
+}
+.s2-bb5 {
+	top: 82.5%;
+	right: 9%;
+}
+.side2-content-right span, .side2-content-left span {
+	color: rgb(255, 255, 255);
+	font-family: 微软雅黑;
+	font-size: 1rem;
+	display: block;
+	width: 40%;
+	height: 11%;
+	font-weight: bold;
+	position: absolute;
+}
+.s2-t1 {
+	top: 5.5%;
+	right: 11%;
+}
+.s2-t2 {
+	top: 25.5%;
+	left: 9%;
+}
+.s2-t3 {
+	top: 45.5%;
+	right: 11%;
+}
+.s2-t4 {
+	top: 65.5%;
+	left: 9%;
+}
+.s2-t5 {
+	top: 85.5%;
+	right: 11%;
+}
+/*第三页*/
+.side3 {
+	background: #66ccff;
+}
+.side2-number {
+	position: absolute;
+	width: 12%;
+	height: 5%;
+	left: 44%;
+	top: 6%;
+}
+.side-title-border {
+	position: absolute;
+	width: 32%;
+	height: 8%;
+	top: 17%;
+	left: 34%;
+}
+.side-title-all1 {
+	position: absolute;
+	width: 32%;
+	height: 8%;
+	top: 16%;
+	left: 34%;
+	color: rgb(255, 255, 255);
+	font-family: 微软雅黑;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+.side-title-all2 {
+	position: absolute;
+	width: 34%;
+	height: 8%;
+	top: 23%;
+	left: 33%;
+	color: rgb(255, 255, 255);
+	font-family: 黑体;
+	font-size: 1rem;
+}
+.side3-content {
+	background: url(../image/side3-content-bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 88%;
+	height: 60%;
+	left: 6%;
+	top: 32%;
+}
+.side3-content-name {
+	position: absolute;
+	width: 36%;
+	height: 10%;
+	left: 32%;
+	top: 11%;
+	background: rgb(129,246,230);
+	color: #fff;
+	font: 1rem/1.7 "微软雅黑";
+}
+.side3-name-left, .side3-name-right {
+	position: absolute;
+	width: 10%;
+	height: 5%;
+	left: 22%;
+	top: 13.4%;
+}
+.side3-name-right {
+	left: 68%;
+}
+.side3-content-border {
+	position: absolute;
+	width: 70%;
+	height: 6%;
+	left: 15%;
+}
+.side3-content-border img:first-of-type {
+	width: 100%;
+	height: 100%;
+}
+.s3-left {
+	position: absolute;
+	left: 8%;
+	top: 38%;
+	height: 25%;
+}
+.s3-right {
+	position: absolute;
+	right: 8%;
+	top: 38%;
+	height: 25%;
+}
+.s3-1 {
+    top: 50%;
+}
+.s3-2 {
+    top: 58%;
+}
+.s3-3 {
+    top: 66%;
+}
+.s3-4 {
+    top: 74%;
+}
+.s3-5 {
+    top: 82%;
+}
+.side3-content-txt {
+	position: absolute;
+	height: 40%;
+	width: 60%;
+	left: 20%;
+	top: 50%;
+}
+.side3-content-txt p {
+	font-family: 微软雅黑;
+    font-weight: 700;
+    color: rgb(30, 30, 30);
+    font-size: 0.8rem;
+    position: absolute;
+    margin: 0;
+}
+.s3-p1 {
+	top: 4%;
+    left: 19%;
+}
+.s3-p2 {
+    top: 24%;
+    left: 13%;
+}
+.s3-p3 {
+    top: 44%;
+    left: 13%;
+}
+.s3-p4 {
+    top: 64%;
+    left: 26%;
+}
+.s3-p5 {
+	top: 83%;
+    left: 27%;
+}
+
+/*第四页*/
+.side4 {
+	background: #FF66CC;
+}
+.side4-title {
+	position: absolute;
+	height: 8%;
+	width: 80%;
+	left: 10%;	
+}
+.s4-t1-1 {
+    height: 100%;
+    position: absolute;
+	left: 0;
+}
+.side4-title-name {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    height: 50%;
+}
+.s4-t1-2 {
+    height: 44%;
+    position: absolute;
+    top: 15px;
+    left: 24%;
+}
+.progress-bar {
+	overflow: hidden;
+	height: 50%;
+	width: 60%;
+	background: rgba(129,246,230,0.5);
+	position: absolute;
+	top: 25%;
+	left: 35%;
+}
+.bar-now1, .bar-now2, .bar-now3, .bar-now4, .bar-now5 {
+	height: 100%;
+	background: rgb(129,246,230);
+}
+.bar-number1, .bar-number2, .bar-number3, .bar-number4, .bar-number5 {
+	position: absolute;
+	top: 22%;
+    font: 0.8rem/1 "微软雅黑";
+}
+.s4-t1 {
+	top: 35%;
+}
+.s4-t2 {
+	top: 46%;
+}
+.s4-t3 {
+	top: 57%;
+}
+.s4-t4 {
+	top: 68%;
+}
+.s4-t5 {
+	top: 79%;
+}
+.bar-now1 {
+	width: 70%;
+}
+.bar-now2 {
+	width: 90%;
+}
+.bar-now3 {
+	width: 90%;
+}
+.bar-now4 {
+	width: 85%;
+}
+.bar-now5 {
+    width: 75%;
+}
+.bar-number1 {
+	left: 45%;
+}
+.bar-number2 {
+	left: 65%;
+}
+.bar-number3 {
+	left: 65%;
+}
+.bar-number4 {
+	left: 60%;
+}
+/*第五页*/
+.side5 {
+	background: rgb(242, 92, 147);
+}
+.side5-bar1 {
+	width: 40%;
+	top: 35%;
+	left: 10%;
+	height: auto;
+}
+.side5-bar2 {
+	height: 50%;
+	top: 38%;
+	left: 9%;
+}
+.side5-bar3 {
+	width: 40%;
+	top: 86%;
+	left: 10%;
+	height: auto;
+}
+.side5-bar4 {
+	height: 47%;
+	top: 89%;
+	left: 50%;
+}
+.side5-bar1, .side5-bar2, .side5-bar3, .side5-bar4 {
+	overflow: hidden;
+	position: absolute;
+}
+.side5-bar1 img, .side5-bar3 img {
+	width: 100%;
+}
+.side5-bar2 img, .side5-bar4 img {
+	height: 100%;
+}
+.side5-content {
+	position: absolute;
+	width: 80%;
+	height: 4%;
+	left: 5.8%;
+}
+.side5-content img {
+	position: absolute;
+	height: 100%;
+	left: 0;
+}
+.side5-content p {
+	position: absolute;
+	font: 0.8rem/1.4 "微软雅黑";
+	left: 10%;
+	top: 20%;
+	margin: 0;
+}
+.s5-t1 {
+	top: 44%;
+}
+.s5-t2 {
+	top: 55%;
+}
+/*第六页*/
+.side6 {
+	background: rgb(42, 209, 187);
+}
+.side6 .s6-p1 {
+	background: url(../image/zol.png) no-repeat ;
+	background-size: contain;
+	height: 300%;
+	width: 200%;
+	text-align: left;
+}
+.side6 .s6-p2 {
+	background: url(../image/mui.png) no-repeat ;
+	background-size: contain;
+	height: 600%;
+	width: 400%;
+	text-align: left;
+}
+.side6 .s5-t2 {
+	top: 60%;
+}
+.s6-span {
+	position: absolute;
+	right: 5%;
+	color: #FFFFFF;
+	font: bold 1rem/1 "微软雅黑";
+}
+
+/*尾页*/
+.side7 {
+	background: rgb(113, 168, 217);
+}
+.wechat {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	z-index: 1;
+}
+.side7-icon-wrapper{
+	width: 26%;
+	position: absolute;
+	top: 35%;
+	left: 37%;
+	z-index: 0;
+	overflow: hidden;
+}
+.side7-icon {
+	width: 100%;
+}
+
+
+/*音乐*/
+div.music {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 9999;
+    width: 62px;
+    height: 25px;
+}
+div.music .btn1 {
+    height: 100%;
+    width: 100%;
+}
+div.music .btn1 .music_open {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+div.music .btn1 .music_close {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+div.music img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+
+
+
+

@@ -1,0 +1,146 @@
+/*360旋转*/
+@keyframes rotate-all{
+	from{}
+	to{transform: rotate(360deg);}
+}
+@-moz-keyframes rotate-all{
+	from{}
+	to{-moz-transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate-all{
+	from{}
+	to{-webkit-transform: rotate(360deg);}
+}
+@-o-keyframes rotate-all{
+	from{}
+	to{-o-transform: rotate(360deg);}
+}
+.rotate-all {
+	-webkit-animation-name: rotate-all;
+	animation-name: rotate-all;
+}
+/*径向扩散*/
+@keyframes radial{
+	from{background: radial-gradient(center, transparent 0%, transparent 5%,#fff)}
+	to{background: radial-gradient(center, transparent 0%, transparent 100%,#fff);}
+}
+/*向上滑动*/
+@keyframes webSwipeTipAfter{
+	from{}
+	to{transform: translateY(-15px);opacity:0;}
+}
+@-moz-keyframes webSwipeTipAfter{
+	from{}
+	to{transform: translateY(-15px);opacity:0;}
+}
+@-webkit-keyframes webSwipeTipAfter{
+	from{}
+	to{transform: translateY(-15px);opacity:0;}
+}
+@-ms-keyframes webSwipeTipAfter{
+	from{transform: translateY(-15px);opacity:0;}
+	to{}
+}
+/*向下滑动*/
+@keyframes SlideDown1{
+	from{transform: translateY(-15px);opacity:0;}
+	to{}
+}
+@-webkit-keyframes SlideDown1{
+	from{transform: translateY(-15px);opacity:0;}
+	to{}
+}
+.SlideDown1 {
+	-webkit-animation-name: SlideDown1;
+	animation-name: SlideDown1;
+}
+/*缩放：从大到小*/
+@keyframes scale1{
+	0%{transform: scale(4);}
+	40%{transform: scale(1);}
+	60%{transform: scale(1.5);}
+	80%{transform: scale(1);}
+	90%{transform: scale(1.2);}
+	to{}
+}
+@-moz-keyframes scale1{
+	0%{transform: scale(4);}
+	40%{transform: scale(1);}
+	60%{transform: scale(1.5);}
+	80%{transform: scale(1);}
+	90%{transform: scale(1.2);}
+	to{}
+}
+@-webkit-keyframes scale1{
+	0%{-webkit-transform: scale(4);}
+	40%{-webkit-transform: scale(1);}
+	60%{-webkit-transform: scale(1.5);}
+	80%{-webkit-transform: scale(1);}
+	90%{-webkit-transform: scale(1.2);}
+	to{}
+}
+.scale1 {
+	-webkit-animation-name: scale1;
+	-moz-animation-name: scale1;
+	animation-name: scale1;
+}
+/*进度条*/
+/*向右*/
+@keyframes progressBar{
+	from{transform: translateX(-100%);}
+	to{}
+}
+@-webkit-keyframes progressBar{
+	from{-webkit-transform: translateX(-100%);}
+	to{}
+}
+.progressBar {
+	-webkit-animation-name: progressBar;
+	animation-name: progressBar;
+}
+/*向左*/
+@keyframes progressBarLeft{
+	from{transform: translateX(100%);}
+	to{}
+}
+@-webkit-keyframes progressBar{
+	from{-webkit-transform: translateX(100%);}
+	to{}
+}
+.progressBarLeft {
+	-webkit-animation-name: progressBarLeft;
+	animation-name: progressBarLeft;
+}
+/*向下*/
+@keyframes progressBarDown{
+	from{transform: translateY(-100%);}
+	to{}
+}
+@-webkit-keyframes progressBarDown{
+	from{-webkit-transform: translateY(-100%);}
+	to{}
+}
+.progressBarDown {
+	-webkit-animation-name: progressBarDown;
+	animation-name: progressBarDown;
+}
+/*向上*/
+@keyframes progressBarUp{
+	from{transform: translateY(100%);opacity:0;filter:alpha(opacity=100);}
+	to{}
+}
+@-webkit-keyframes progressBarUp{
+	from{-webkit-transform: translateY(100%);opacity:1;filter:alpha(opacity=0);}
+	to{}
+}
+.progressBarUp {
+	-webkit-animation-name: progressBarUp;
+	animation-name: progressBarUp;
+}
+
+
+
+
+
+
+

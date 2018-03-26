@@ -1,0 +1,17 @@
+@abc : #eee;
+.prefix(@cssprop,@style){
+    @{cssprop} : @style;
+    -webkit-@{cssprop} : @style;
+    -moz-@{cssprop} : @style;
+    -ms-@{cssprop} : @style;
+    -o-@{cssprop} : @style;
+}
+
+
+body {
+    background:  @abc;
+    .prefix(transition , width 3s linear);
+    .prefix(transform , ratate(30deg));
+    .prefix(border-radius , 20%);
+    
+}
