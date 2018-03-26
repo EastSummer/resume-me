@@ -1,2 +1,2 @@
 # resume-me
-[个人简历](https://github.com/EastSummer/resume-me/build/index.html)   
+[个人简历](https://eastsummer.github.io/resume-me/build/index.html)   
